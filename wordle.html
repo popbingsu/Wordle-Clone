@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>Wordle Clone</title>
+        <link rel="stylesheet" href="wordle.css">
+        <script src="wordle.js"></script>
+    </head>
+    <body>
+        <div class="header"> <h2>Wordle</h2></div>
+        <div class="blocks">
+            <div class="block1">
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="textr"></p></div>
+            </div>
+            <div class="block2">
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+            </div>
+            <div class="block3">
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+            </div>
+            <div class="block4">
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="textr"></p></div>
+                <div class="square"><p class="text"></p></div>
+            </div>
+            <div class="block5">
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+                <div class="square"><p class="text"></p></div>
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard-block-1">
+                <button class="letter" id="q" onclick="addletter('Q')">Q</button>
+                <button class="letter" id="w" onclick="addletter('W')">W</button>
+                <button class="letter" id="e" onclick="addletter('E')">E</button>
+                <button class="letter" id="r" onclick="addletter('R')">R</button>
+                <button class="letter" id="t" onclick="addletter('T')">T</button>
+                <button class="letter" id="y" onclick="addletter('Y')">Y</button>
+                <button class="letter" id="u" onclick="addletter('U')">U</button>
+                <button class="letter" id="i" onclick="addletter('I')">I</button>
+                <button class="letter" id="o" onclick="addletter('O')">O</button>
+                <button class="letter" id="p" onclick="addletter('P')">P</button>
+            </div>
+            <div class="keyboard-block-2">
+                <button class="letter" id="a" onclick="addletter('A')">A</button>
+                <button class="letter" id="s" onclick="addletter('S')">S</button>
+                <button class="letter" id="d" onclick="addletter('D')">D</button>
+                <button class="letter" id="f" onclick="addletter('F')">F</button>
+                <button class="letter" id="g" onclick="addletter('G')">G</button>
+                <button class="letter" id="h" onclick="addletter('H')">H</button>
+                <button class="letter" id="j" onclick="addletter('J')">J</button>
+                <button class="letter" id="k" onclick="addletter('K')">K</button>
+                <button class="letter" id="l" onclick="addletter('L')">L</button>
+            </div>
+            <div class="keyboard-block-3">
+                <button class="letter-side" id="enter" onclick="enterWord()">ENTER</button>
+                <button class="letter" id="z" onclick="addletter('Z')">Z</button>
+                <button class="letter" id="x" onclick="addletter('X')">X</button>
+                <button class="letter" id="c" onclick="addletter('C')">C </button>
+                <button class="letter" id="v" onclick="addletter('V')">V</button>
+                <button class="letter" id="b" onclick="addletter('B')">B</button>
+                <button class="letter" id="n" onclick="addletter('N')">N</button>
+                <button class="letter" id="m" onclick="addletter('M')">M</button>
+                <button class="letter-side" id="delete" onclick="deleteletter()">DELETE</button>
+            </div>
+        </div>
+    </body>
+</hmtl>

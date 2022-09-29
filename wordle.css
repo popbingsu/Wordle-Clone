@@ -1,0 +1,93 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    margin-top: 0;
+}
+
+.blocks{
+    display: grid;
+    width: 350px;
+    height: 350px;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.block1, .block2, .block3, .block4, .block5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.square{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(184, 184, 184);
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard{
+    display:grid;
+    grid-template-rows: repeat(3, 50px);
+    gap: 5px;
+    margin-top: 5%;
+}
+
+.keyboard-block-1, .keyboard-block-2, .keyboard-block-3{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.keyboard .letter, .letter-side{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #d3d6da;
+}
+
+.keyboard .letter-side{
+    flex: 1.5;
+}
+
+.keyboard-block-2{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button{
+    border-style: none;
+    color:black;
+    font-weight:600;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.letter:hover, .letter-side:hover{
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.letter:active, .letter-side:active{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
