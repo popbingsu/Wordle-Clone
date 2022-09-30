@@ -4,7 +4,7 @@
         <title>Wordle Clone</title>
         <link rel="stylesheet" href="wordle.css">
         <script src="wordle.js"></script>
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    </head>
     <body>
         <div class="header"> <h2>Wordle</h2></div>
         <div class="blocks">
@@ -77,7 +77,9 @@
                 <button class="letter" id="b" onclick="addletter('B')">B</button>
                 <button class="letter" id="n" onclick="addletter('N')">N</button>
                 <button class="letter" id="m" onclick="addletter('M')">M</button>
-                <button class="letter-side" id="delete" onclick="deleteletter()">DELETE</button>
+                <button class="letter-side" id="delete" onclick="deleteletter()"><span class="material-symbols-outlined">
+                    backspace
+                    </span></button>
             </div>
         </div>
     </body>
